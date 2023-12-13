@@ -8,30 +8,8 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
-.section--one{
-  width: 100%;
-  background-image: url("https://preview.colorlib.com/theme/academia/images/bg_1.jpg");
-  background-attachment: fixed;
-  background-position: inherit;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 50rem;
-  z-index: 1;
-  position: relative;
-  margin: auto;
-}
-.section--one::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  opacity: .1;
-  background-color: black;
-}
 
+/* TOP SECTION NAV */
 .top--header{
   display: flex;
   justify-content: space-between;
@@ -41,9 +19,6 @@ body{
   height: 5rem;
   margin: 0 auto 1rem auto;
 
-}
-.navbar{
-  padding: 1rem;
 }
 
 .logo{
@@ -55,6 +30,7 @@ body{
 }
 .logo p{
   font-size: 13px;
+  font-weight: 500;
   margin-top: 3px;
 }
 
@@ -108,6 +84,10 @@ body{
 }
 
 /* Nav Section */
+.navbar{
+  padding: 1rem;
+}
+
 .main-nav{
   height: 5rem;
   align-items: center;
@@ -122,13 +102,18 @@ body{
   display: flex;
   list-style: none;
   color: #fff;
-  width: 40rem;
+  width: 45rem;
+  padding-left: 1rem;
   justify-content: space-around;
 
 }
 .nav-list li{
   font-weight: 500;
   font-size: 15px;
+}
+.nav-link{
+  text-decoration: none;
+  color: #fff;
 }
 .nav-btn{
   background-color: #1eb2a6;
@@ -143,6 +128,40 @@ body{
 }
 
 /* HERO SECTION */
+.section--one{
+  background-image: url("https://preview.colorlib.com/theme/academia/images/bg_1.jpg");
+}
+.section--two{
+  background-image: url("https://preview.colorlib.com/theme/academia/images/bg_2.jpg");
+}
+
+.section--one,
+.section--two{
+  background-attachment: fixed;
+  background-position: inherit;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 60rem;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  z-index: 1;
+}
+
+.section--one::before,
+.section--two::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .1;
+  background-color: black;
+}
+
+
 .hero--main{
   align-items: flex-start;
   width: 100%;
@@ -152,8 +171,7 @@ body{
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  height: 30rem;
-
+  height: 40rem;
 }
 .hero{
   padding: 1rem;

@@ -2,6 +2,7 @@
 import { IoMdTime } from "react-icons/io";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaFacebookF, FaInstagram, FaTwitter, FaDribbble  } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const NavBar = () =>{
     return(
         <div className="navbar">
@@ -45,12 +46,27 @@ const NavBar = () =>{
             <nav className="main-nav">
                 <div>
                     <ul className="nav-list">
-                        <li>Home</li>
-                        <li>All Courses</li>
-                        <li>About</li>
-                        <li>Team</li>
-                        <li>Pricing</li>
-                        <li>Contact</li>
+                        <li>
+                            <Link className="nav-link" to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link className="nav-link" to="/courses">All Courses</Link>
+                        </li>
+                        <li>
+                            <Link className="nav-link" to="/about">About</Link>
+                        </li>
+                        <li>
+                            <Link className="nav-link" to="/team">Team</Link>
+                        </li>
+                        <li>
+                            <Link className="nav-link" to="/pricing">Pricing</Link>
+                        </li>
+                        <li>
+                            <Link className="nav-link" to="/journal">Journal</Link>
+                        </li>
+                        <li>
+                            <Link className="nav-link" to="/contact">Contact</Link>
+                        </li>
                     </ul>
                 </div>
                 <button className="nav-btn">Get Certificate</button>
