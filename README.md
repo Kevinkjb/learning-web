@@ -7,4 +7,7 @@ Here's my link to the website
 Responsive will be made when the website is done.
 Please view it on desktop version for now
 
+# Note 
+This is still on progress status.
+
 Thanks
