@@ -6,7 +6,7 @@ const JournalPage = () =>{
         <>
             <div className='section--two'>
                 <NavBar/>
-                <HeroPageTwo title={"Journal"}/>
+                <HeroPageTwo title={"Journal"} titleTwo={"Blog"}/>
             </div>
         </>
     )

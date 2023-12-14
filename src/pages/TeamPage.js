@@ -6,7 +6,7 @@ const TeamPage = () =>{
         <>
             <div className='section--two'>
                 <NavBar/>
-                <HeroPageTwo title={"Team"}/>
+                <HeroPageTwo title={"Team"} titleTwo={"Team"}/>
             </div>
         </>
     )

@@ -6,7 +6,7 @@ const ContactPage = () =>{
         <>
             <div className='section--two'>
                 <NavBar/>
-                <HeroPageTwo title={"Contact"}/>
+                <HeroPageTwo title={"Contact"} titleTwo={"Contact"}/>
             </div>
         </>
     )
