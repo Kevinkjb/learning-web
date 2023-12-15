@@ -4,6 +4,10 @@ import BenefitsPage from "../components/BenefitsPage"
 import ReviewPage from "../components/ReviewPage"
 import CoursesPage from "../components/CoursesPage"
 import courses from "./data-info";
+import coursesData from "./courses-data"
+import testimonial from "./testimonial-data"
+import OnlineCourses from "../components/OnlineCourses"
+import Testimonial from "../components/Testimonial"
 
 
 const HomePage = () =>{
@@ -28,10 +32,45 @@ const HomePage = () =>{
                         />
                     ))}
                 </div>
+                
             </div>
-            
-
-            
+            <div className="online--page">
+                <div className="course-title-home">
+                    <h5>Our Courses</h5>
+                    <h1>Browse Our Online Courses</h1>
+                </div>
+                <div className="online--courses">
+                
+                {coursesData.map(data => (
+                    <OnlineCourses
+                        key={data.id}
+                        onlineCourses={data}
+                    />
+                ))}
+                </div>
+            </div>
+            <div className="testimonial--page">
+                <div className="course-title-home">
+                    <h5>Testimonial</h5>
+                    <h1>Our Successful Students</h1>
+                </div>
+                <div className="testimonial--section">
+                    {
+                    testimonial.map(testimonialData => (
+                        <Testimonial
+                            key={testimonialData.id}
+                            testimonial={testimonialData}
+                        />
+                    ))
+                    }
+                </div>
+            </div>
+            <div className="blog--page">
+                <div className="course-title-home">
+                        <h5>Our Blog</h5>
+                        <h1>Recent from blog</h1>
+                </div>
+            </div>
         </>
     )
 }

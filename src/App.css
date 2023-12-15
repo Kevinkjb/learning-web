@@ -228,26 +228,21 @@ body{
   align-items: center;
   transition: all .3s ease;
 }
-.prev-home:hover{
-  color: #1eb2a6;
-}
-.arrow-icon{
-  font-size: 20px;
-}
-
 .course-current{
   display: flex;
   align-items: center;
 
 }
-
+.prev-home:hover{
+  color: #1eb2a6;
+}
 .home-link{
   display: flex;
   justify-content: center;
   color: #fff;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
   align-items: center;
 }
 .getstarted--btn,
@@ -456,7 +451,6 @@ body{
   margin-bottom: 1.2rem;
   text-transform: uppercase;
   font-size: 1rem;
-  letter-spacing: 1px;
 }
 .course-title-home h1{
   color: rgb(74, 74, 74);
@@ -535,4 +529,107 @@ body{
 .enroll--btn:hover{
   background-color: #1eb2a6;
   color: #fff;
+}
+
+/* ONLINE COURSES LIST SECTION */
+.online--page{
+  padding: 8rem 0;
+}
+.online--courses{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  place-items: center;
+  width: 85rem;
+  margin: 0 auto;
+
+}
+.sample-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 13.5rem;
+  height: 15rem;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sample-box:hover{
+  border: .4rem solid #1eb2a6;
+
+}
+
+.sample-details{
+  margin-top: .5rem;
+  width: 13rem;
+  padding: 1rem;
+}
+
+.sample-info{
+  height: 12rem;
+}
+.sample-details h2{
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: rgb(74, 74, 74);
+}
+.sample-details p{
+  font-size: 13px;
+  color: #1eb2a6;
+}
+.courses-icon{
+  width: 4.5rem;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial--section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80rem;
+  margin: 0 auto;
+}
+.testimonial--page{
+  padding: 8rem 0;
+}
+.testimonial--box{
+  width: 25rem;
+  background-color: #fff;
+  height: 16rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.testimonial--img{
+  width: 5rem;
+  border-radius: 100%;
+}
+.student--prof{
+  display: flex;
+  align-items: center;
+}
+.student--info{
+  margin-left: 1rem;
+}
+.testimonial--title{
+  text-transform: uppercase;
+}
+.job--title{
+  color: #1eb2a6;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 13px;
+}
+.testimonial--text p{
+  margin-top: 1rem;
+  font-size: 16px;
+  color: #999999;
+  line-height: 1.8;
+  width: 20rem
+}
+
+/* BLOG SECTION */
+.blog--page{
+  padding: 7rem 0;
 }
