@@ -75,7 +75,7 @@ const HomePage = () =>{
 
                 <div className="blog--section">
                     {
-                        blogData.map(blogItem => (
+                        blogData.filter((item, idx) => idx < 3).map(blogItem => (
                             <BlogPage
                                 key={blogItem.id}
                                 blog={blogItem}

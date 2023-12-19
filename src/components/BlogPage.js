@@ -6,7 +6,7 @@ const BlogPage = ({blog}) =>{
         <>
         <div className='blog--container'>
             <div>
-                <Link>
+                <Link to="/journal">
                     <img className='blog--img' src={blog.imgURL} alt="blog img"/>
                 </Link>
             </div>

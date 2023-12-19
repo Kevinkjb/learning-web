@@ -1,12 +1,21 @@
+import BlogPage from "../components/BlogPage"
 import HeroPageTwo from "../components/HeroPageTwo"
 import NavBar from "../components/NavBar"
+import blog from './blog-data'
 
 const JournalPage = () =>{
     return(
         <>
             <div className='section--two'>
                 <NavBar/>
-                <HeroPageTwo title={"Journal"} titleTwo={"Blog"}/>
+                <HeroPageTwo title={"Blog Posts"} titleTwo={"Blog"}/>
+            </div>
+            <div className="blog-all-section">
+                {blog.map(item => (
+                    <BlogPage
+                    blog={item}
+                    />
+                ))}
             </div>
         </>
     )
