@@ -260,11 +260,17 @@ body{
   border-radius: 5px;
   font-weight: 600;
   text-transform: uppercase;
+  text-decoration: none;
+  transition: all .3s ease;
 }
 .course--btn{
   background-color: #fff;
   color: #1eb2a6;
   width: 10rem;
+}
+.course--btn:hover,
+.getstarted--btn:hover{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 /* BENEFITS SECTION */
@@ -491,7 +497,7 @@ body{
 }
 .user--name span{
   color: gray;
-  margin-left: 5px;
+  margin-left: 8px;
   font-weight: 500;
 }
 
@@ -631,5 +637,78 @@ body{
 
 /* BLOG SECTION */
 .blog--page{
-  padding: 7rem 0;
+  padding: 7rem 4rem;
+
+}
+.blog--section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 73%;
+  margin: 0 auto;
+}
+.blog--container{
+  width: 26rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+.blog--img{
+  width: 26rem;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.blog-item-section{
+  display: flex;
+  width: 19rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+
+}
+.blog--details{
+  padding: 1.8rem;
+}
+.blog-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.blog--comments,
+.blog--date,
+.blog--admin{
+  color: #1eb2a6;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 5px;
+  text-decoration: none;
+}
+.blog--date,
+.blog--admin{
+  color: #999999;
+}
+.blog--icon{
+  color: #1eb2a6;
+  font-size: 13px;
+}
+
+.blog--title{
+  text-decoration: none;
+  color: #000;
+  transition: all .3s ease;
+}
+.blog--title:hover{
+  color: #1eb2a6;
+}
+.blog--title h2{
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.blog--desc p{
+  color: #999999;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
 }

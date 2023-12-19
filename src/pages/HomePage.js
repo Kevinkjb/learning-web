@@ -6,8 +6,10 @@ import CoursesPage from "../components/CoursesPage"
 import courses from "./data-info";
 import coursesData from "./courses-data"
 import testimonial from "./testimonial-data"
+import blogData from '../pages/blog-data'
 import OnlineCourses from "../components/OnlineCourses"
 import Testimonial from "../components/Testimonial"
+import BlogPage from "../components/BlogPage"
 
 
 const HomePage = () =>{
@@ -69,6 +71,19 @@ const HomePage = () =>{
                 <div className="course-title-home">
                         <h5>Our Blog</h5>
                         <h1>Recent from blog</h1>
+                </div>
+
+                <div className="blog--section">
+                    {
+                        blogData.map(blogItem => (
+                            <BlogPage
+                                key={blogItem.id}
+                                blog={blogItem}
+
+                            />
+                        ))
+                    }
+
                 </div>
             </div>
         </>

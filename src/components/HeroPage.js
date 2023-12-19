@@ -1,4 +1,5 @@
 import { IoIosArrowRoundForward } from "react-icons/io"
+import {Link} from 'react-router-dom'
 
 const HeroPage = () =>{
     return(
@@ -12,8 +13,15 @@ const HeroPage = () =>{
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 </div>
                 <div className="hero--btn">
-                    <button className="getstarted--btn">Get Started Now! <IoIosArrowRoundForward className="arrow"/></button>
-                    <button className="course--btn">View Course <IoIosArrowRoundForward/></button>
+                    <Link className="getstarted--btn">
+                        Get Started Now! 
+                        <IoIosArrowRoundForward className="arrow"/>
+                    </Link>
+                    <Link className="course--btn">
+                        View Course 
+                        <IoIosArrowRoundForward className="arrow"/>
+                    </Link>
+                    
                 </div>
             </div>
         </div>
