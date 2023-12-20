@@ -1,0 +1,57 @@
+/* NEWSLETTER SECTION */
+.newsletter--page{
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    height: 12rem;
+    color: var(--secondary-color);
+    padding: 3rem;
+    margin: 4rem 0;
+  }
+  .news--container{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+  }
+  .news--title{
+    margin-bottom: 12px;
+    font-size: 1.7rem;
+  }
+  .email{
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--secondary-color);
+    color: var(--secondary-color) !important;
+    width: 25rem;
+    font-size: 15px;
+    padding-bottom: .8rem;
+  }
+  .email::placeholder{
+    color: var(--secondary-color);
+    opacity: 1;
+  }
+  .email:focus{
+    outline: none;
+  }
+  .news--btn-box{
+    position: relative;
+  }
+  .news--btn{
+    border: none;
+    background: transparent;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    position: absolute;
+    top: -12px;
+    left: -1rem;
+    cursor: pointer;
+  
+  }
+  .form{
+    display: flex;
+    align-items: center;
+    width: 25rem;
+  }

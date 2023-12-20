@@ -1,4 +1,5 @@
 import { FaPaperPlane } from "react-icons/fa";
+import '../css/news.css'
 
 const Newsletter = () =>{
     return(

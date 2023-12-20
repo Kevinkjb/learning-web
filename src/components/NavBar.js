@@ -3,6 +3,7 @@ import { IoMdTime } from "react-icons/io";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaFacebookF, FaInstagram, FaTwitter, FaDribbble  } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import '../css/nav.css'
 const NavBar = () =>{
     return(
         <div className="navbar">

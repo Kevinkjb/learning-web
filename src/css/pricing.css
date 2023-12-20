@@ -1,0 +1,59 @@
+/* PRICING PAGE SECTION */
+.pricing--page{
+    padding: 7rem 4rem;
+  }
+  .pricing--section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    width: 77rem;
+    margin: 0 auto;
+  }
+  .pricing--container{
+    width: 18rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 2.5rem;
+  }
+  .pricing--option{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  .plan{
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: 1px;
+  }
+  .pricing--option span{
+    color: var(--text-light);
+    font-size: 1.8rem;
+    margin-right: 5px;
+  }
+  .price{
+    font-size: 3.2rem;
+    color: var(--primary-color);
+  }
+  .pricing--desc{
+    color: var(--text-light);
+    font-weight: 400;
+    line-height: 1.8;
+  }
+  .pricing--btn{
+    margin-top: 2rem ;
+    width: 11rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+  .pricing--btn:hover{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }

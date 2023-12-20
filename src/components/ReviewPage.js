@@ -1,6 +1,7 @@
 import { FaUserGraduate } from "react-icons/fa";
 import { GrUserExpert, GrSchedule } from "react-icons/gr";
 import { GiBookmarklet } from "react-icons/gi";
+import '../css/review.css'
 
 const ReviewPage = () =>{
     return(

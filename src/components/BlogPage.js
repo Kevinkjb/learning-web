@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import { FaUser, FaRegCalendarAlt, FaComment } from "react-icons/fa";
+import '../css/blog.css'
 
 const BlogPage = ({blog}) =>{
     return(

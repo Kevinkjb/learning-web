@@ -1,3 +1,5 @@
+import '../css/testimonials.css'
+
 const Testimonial = ({testimonial}) =>{
     return(
         <>

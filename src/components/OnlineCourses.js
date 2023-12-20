@@ -1,3 +1,5 @@
+import '../css/online-courses.css'
+
 const OnlineCourses = ({onlineCourses}) =>{
     return(
         <>

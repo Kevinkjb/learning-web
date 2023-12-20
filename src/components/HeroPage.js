@@ -1,5 +1,6 @@
 import { IoIosArrowRoundForward } from "react-icons/io"
 import {Link} from 'react-router-dom'
+import '../css/hero.css'
 
 const HeroPage = () =>{
     return(

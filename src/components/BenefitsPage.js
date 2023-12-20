@@ -1,6 +1,7 @@
 import { GiBookmarklet } from "react-icons/gi";
 import { PiCertificateLight } from "react-icons/pi";
 import { GrUserExpert } from "react-icons/gr";
+import '../css/benefits.css'
 const benefitsImg = "https://preview.colorlib.com/theme/academia/images/about.jpg"
 
 const BenefitsPage = () =>{

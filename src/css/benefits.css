@@ -1,0 +1,79 @@
+/* BENEFITS SECTION */
+.main--benefits{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    width: 100rem;
+    margin: 0 auto;
+    height: 52rem;
+  
+  }
+  .benefits--img{
+    width: 38rem;
+    height: 52rem;
+    object-fit: cover;
+  }
+  .img-container{
+    height: 52rem;
+  }
+  .benefits--header{
+    width: 30rem;
+  }
+  .benefits--header h5{
+    color: #1eb2a6;
+    text-transform: uppercase;
+    font-size: .95rem;
+  }
+  .benefits--header h2{
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 1.1rem 0 1.3rem 0;
+  }
+  .benefits--details{
+    height: 42rem;
+  }
+  .benefits--info{
+    display: flex;
+    height: 31rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .box-one,
+  .box-two,
+  .box-three{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    width: 40rem;
+    height: 10rem;
+    border-radius: 5px;
+  }
+  .benefits--icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+  .book--icon,
+  .cert--icon,
+  .cert--icon{
+    font-size: 4rem;
+    color: #1eb2a6;
+  
+  }
+  .details--desc h3{
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+  .details--desc p{
+    font-size: 16px;
+    width: 30rem;
+    line-height: 1.7;
+    margin: 1rem 0;
+    color: rgb(144, 144, 144);
+  }
+  
+  
+  

@@ -1,4 +1,5 @@
-import {Link} from 'react-router-dom'
+
+import '../css/pricing.css'
 
 const Pricing = ({pricing}) => {
     return(
@@ -11,9 +12,7 @@ const Pricing = ({pricing}) => {
                         <h1 className="price">{pricing.price}K</h1>
                     </div>
                     <p className="pricing--desc">{pricing.description}</p>
-                    <Link to="/pricing">
-                        <button className="pricing--btn">Get Started</button>
-                    </Link>
+                    <button className="pricing--btn">Get Started</button>
                 </div>
             </section>
         </>
