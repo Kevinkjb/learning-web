@@ -6,7 +6,7 @@ const HeroPage = () =>{
         <div className="hero">
             <div className="hero--main">
                 <div className="hero--details">
-                    <h5>Welcome to Academia</h5>
+                    <h2>Welcome to Academia</h2>
                     <h1>
                         Best Online Education Expertise
                     </h1>
