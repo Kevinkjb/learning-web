@@ -93,6 +93,9 @@
     color: #fff;
     border-radius: 100%;
   }
+  .course--img{
+    width: 3rem;
+  }
   .user--name{
     display: flex;
     align-items: center;

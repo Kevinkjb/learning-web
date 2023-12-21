@@ -13,7 +13,9 @@ const CoursesPage = ({courses}) =>{
     return(
             <div className="course--main">
                 <div className="courses--section">
-                    <div className="course--icon">img</div>
+                    <div className="course--icon">
+                        <img className="course--img" src={courses.icon} alt="courses images"/>
+                    </div>
                     <div className="course--all">
                         <div className="course--details">
                             <h2 className="course--title">{courses.title}</h2>
