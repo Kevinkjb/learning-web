@@ -68,8 +68,16 @@
   .lect{
     margin-bottom: 1rem;
   }
-  .rating{
+  .rating--sect{
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
+
+  }
+  .rating{
+    margin-left: 5px;
+    color: var(--primary-color);
+    font-size: 14px;
   }
   .course--prof{
     width: 2rem;

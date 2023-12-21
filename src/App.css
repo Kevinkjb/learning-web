@@ -5,6 +5,7 @@
   --text-dark: #000000;
   --text-light: #999999;
   --main-bg: rgb(234, 234, 234, .4);
+  --footer-text-color: #666666;
 }
 
 *{

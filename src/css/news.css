@@ -6,7 +6,7 @@
     height: 12rem;
     color: var(--secondary-color);
     padding: 3rem;
-    margin: 4rem 0;
+    margin: 4rem 0 0 0;
   }
   .news--container{
     display: flex;

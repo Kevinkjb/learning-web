@@ -13,6 +13,7 @@ import Testimonial from "../components/Testimonial"
 import BlogPage from "../components/BlogPage"
 import Pricing from "../components/Pricing"
 import News from "../components/News"
+import FooterPage from "../components/FooterPage"
 
 
 const HomePage = () =>{
@@ -131,6 +132,11 @@ const HomePage = () =>{
 
             <section className="newsletter--page">
                     <News />
+            </section>
+
+            {/* FOOTER PAGE SECTION */}
+            <section className="footer--container">
+                <FooterPage/>
             </section>
         </>
     )

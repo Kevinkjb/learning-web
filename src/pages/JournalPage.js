@@ -13,6 +13,7 @@ const JournalPage = () =>{
             <div className="blog-all-section">
                 {blog.map(item => (
                     <BlogPage
+                    key={item.id}
                     blog={item}
                     />
                 ))}

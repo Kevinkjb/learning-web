@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom"
+
+import {useState} from 'react'
+
 import '../css/courses.css'
 
 const CoursesPage = ({courses}) =>{
+    const [rating, setRating] = useState(5)
+    const handleStarClick = (index) => {
+        setRating(index + 1)
+    }
     
     return(
             <div className="course--main">
@@ -10,7 +17,22 @@ const CoursesPage = ({courses}) =>{
                     <div className="course--all">
                         <div className="course--details">
                             <h2 className="course--title">{courses.title}</h2>
-                            <p className="rating">{courses.rating}</p>
+                            <div className="rating--sect">
+                                {[...Array(5)].map((_, index) => (
+                                    <span
+                                    key={index}
+                                    onClick={() => handleStarClick(index)}
+                                    style={{
+                                        cursor: 'pointer',
+                                        color: index < rating ? 'var(--primary-color)' : 'var(--text-light)',
+                                        fontSize: '1.4rem',
+                                    }}
+                                    >
+                                    &#9733; 
+                                    </span>
+                                ))}
+                                <p className="rating">({rating})</p>
+                            </div>
                             <div className="user--name">
                                 <img className="course--prof" src={courses.imgURL} alt="course img"/>
                                 <span>by {courses.name}</span>
