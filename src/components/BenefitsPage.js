@@ -6,7 +6,7 @@ const benefitsImg = "https://preview.colorlib.com/theme/academia/images/about.jp
 
 const BenefitsPage = () =>{
     return(
-        <div>
+        <>
             <div className="main--benefits">
                 <div className="img-container">
                     <img className="benefits--img" src={benefitsImg} alt="benefits-img"/>
@@ -45,7 +45,7 @@ const BenefitsPage = () =>{
                 </div>
 
             </div>
-        </div>
+        </>
         
     )
 }

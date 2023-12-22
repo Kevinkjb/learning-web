@@ -1,8 +1,9 @@
 /* TOP SECTION NAV */
 .top--header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: .6fr 1fr;
+    align-content: center;
+    grid-template-rows: 1fr;
     width: 100%;
     max-width: 95rem;
     height: 5rem;
@@ -13,6 +14,7 @@
   .logo{
     color: #fff;
     text-transform: uppercase;
+    margin: auto 0;
   }
   .logo h2{
     font-size: 2rem;
@@ -47,11 +49,11 @@
   .contact-info{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 45rem;
+    justify-content: space-around;
   }
   .contact-details{
     display: flex;
+
   }
   /* Social Media Icons Header */
   .media--icons{
@@ -59,6 +61,7 @@
     align-items: center;
     justify-content: space-between;
     width: 12rem;
+    margin-left: auto;
   }
   .media--icons span{
     display: flex;
@@ -114,4 +117,72 @@
     height: 100%;
     letter-spacing: 1px;
     cursor: pointer;
+  }
+  .burger--menu{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+  }
+  .burger{
+    display: none;
+  }
+  .burger--text{
+    margin-left: .3em;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+  }
+
+  /* 
+  RESPONSIVE DEVICE SCREEN SECTION 
+  */
+  @media screen and (max-width: 1150px) {
+    .top--header{
+      width: 50rem;
+      max-width: 100%;
+    }
+    .contact-details{
+      display: none;
+    }
+    .media--icons{
+      margin-left: auto;
+    }
+    .nav-list{
+      display: none;
+    }
+    .burger{
+      display: flex;
+      margin-right: .8rem;
+      align-items: center;
+    }
+    .main-nav{
+      flex-direction: row-reverse;
+      background-color: #22c8ba;
+    }
+    .nav-btn{
+      margin-left: .8rem;
+    }
+    .navbar{
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 810px) {
+    .logo{
+      margin-left: 1rem;
+    }
+    .media--icons{
+      margin-right: 1rem;
+    }
+  }
+  @media screen and (max-width: 670px) {
+    .top--header{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 570px) {
+    .media--icons{
+      display: none;
+    }
+    .top--header{
+      grid-template-columns: 1fr;
+      margin-bottom: 0;
+    }
   }

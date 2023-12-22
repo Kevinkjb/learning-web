@@ -24,9 +24,11 @@ const HomePage = () =>{
                 <NavBar/>
                 <HeroPage/>
             </div>
-
-            {/*BENEFITS PAGE SECTION */}
-            <BenefitsPage/>
+            <div className="section--benefits">
+                {/*BENEFITS PAGE SECTION */}
+                <BenefitsPage/>
+            </div>
+            
 
             {/*REVIEW PAGE SECTION */}
             <ReviewPage/>

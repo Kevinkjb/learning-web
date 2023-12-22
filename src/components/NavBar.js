@@ -2,6 +2,7 @@
 import { IoMdTime } from "react-icons/io";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaFacebookF, FaInstagram, FaTwitter, FaDribbble  } from "react-icons/fa";
+import { TiThMenu } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import '../css/nav.css'
 const NavBar = () =>{
@@ -42,10 +43,16 @@ const NavBar = () =>{
                         <span><FaInstagram/></span>
                         <span><FaDribbble /></span>
                     </div>
+
                 </div>
+
             </div>
             <nav className="main-nav">
                 <div>
+                    <div className="burger">
+                        <TiThMenu className="burger--menu"/>
+                        <span className="burger--text">Menu</span>
+                    </div>
                     <ul className="nav-list">
                         <li>
                             <Link className="nav-link" to="/">Home</Link>
