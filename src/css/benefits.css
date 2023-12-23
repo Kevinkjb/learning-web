@@ -1,6 +1,7 @@
 /* BENEFITS SECTION */
 .section--benefits{
-  height: 52rem;
+  min-height: 100vh;
+  min-height: 100svh;
 }
 .main--benefits{
     display: grid;

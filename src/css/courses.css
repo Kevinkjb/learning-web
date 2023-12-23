@@ -1,20 +1,17 @@
 /* COURSES SECTION */
 .course--page{
     padding: 160px 0;
-    width: 65%;
+    width: 80rem;
+    max-width: 100%;
     margin: 0 auto;
   }
   .course-all-page{
     padding: 160px 0;
-    width: 65%;
+    width: 80rem;
+    max-width: 100%;
     margin: 0 auto;
   }
-  .course-all{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1.2rem;
-  }
+
   .course--container{
     padding-top: 2rem;
     display: flex;
@@ -140,4 +137,13 @@
   .enroll--btn:hover{
     background-color: #1eb2a6;
     color: #fff;
+  }
+
+  @media screen and (max-width: 1250px) {
+    .course-all{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
   }
