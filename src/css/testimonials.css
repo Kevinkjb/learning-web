@@ -2,11 +2,14 @@
 .testimonial--section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 80rem;
-    margin: 0 auto;
+    grid-template-rows: 1fr;
+    justify-items: center;
   }
   .testimonial--page{
     padding: 8rem 0;
+    width: 90rem;
+    max-width: 100%;
+    margin: 0 auto;
   }
   .testimonial--box{
     width: 25rem;
@@ -43,4 +46,77 @@
     color: #999999;
     line-height: 1.8;
     width: 20rem
+  }
+
+  @media screen and (max-width: 1230px) {
+    .testimonial--box{
+      width: 23rem;
+      padding: 1.8rem;
+
+    }
+    .testimonial--section{
+      width: 71rem;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 1140px) {
+    .testimonial--box{
+      width: 25rem;
+    }
+    .testimonial--section{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 1fr;
+      width: 55rem;
+      gap: 1rem;
+    }
+    .testimonial--page{
+      width: 55rem;
+    }
+  }
+  @media screen and (max-width: 1140px) {
+    .testimonial--box{
+      width: 23rem;
+    }
+    .testimonial--section{
+      width: 48rem;
+    }
+    .testimonial--page{
+      width: 48rem;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    .testimonial--box{
+      width: 30rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .testimonial--section{
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      width: 32rem;
+      gap: 1.3rem;
+    }
+    .testimonial--page{
+      width: 32rem;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    .testimonial--page,
+    .testimonial--box,
+    .testimonial--section{
+      width: 26rem;
+    }
+
+  }
+  @media screen and (max-width: 420px) {
+    .testimonial--page,
+    .testimonial--box,
+    .testimonial--section{
+      width: 22rem;
+    }
+
+    .testimonial--box{
+      padding: 1rem;
+    }
   }

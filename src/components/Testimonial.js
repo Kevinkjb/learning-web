@@ -4,6 +4,7 @@ const Testimonial = ({testimonial}) =>{
     return(
         <>
             <div className="testimonial--box">
+                <div>
                     <div className="student--prof">
                         <img className="testimonial--img" src={testimonial.imgURL} alt="testimonial img"/>
                         <div className="student--info">
@@ -14,6 +15,8 @@ const Testimonial = ({testimonial}) =>{
                     <div className="testimonial--text">
                         <p>{testimonial.description}</p>
                     </div>
+                </div>
+
             </div>
         </>
     )

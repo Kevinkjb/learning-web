@@ -1,15 +1,19 @@
 /* BLOG SECTION */
 .blog--page{
-    padding: 7rem 4rem;
+    padding: 7rem 0;
+    width: 95rem;
+    max-width: 100%;
+    margin: 0 auto;
   
   }
   .blog--section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-    width: 70%;
+    justify-items: center;
+    width: 85rem;
+    max-width: 100%;
     margin: 0 auto;
-    gap: 20px;
+    gap: 1.2em;
   }
   .blog-all-section{
     display: grid;
