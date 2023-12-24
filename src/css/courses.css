@@ -5,23 +5,19 @@
     max-width: 100%;
     margin: 0 auto;
   }
-  .course-all-page{
-    padding: 160px 0;
-    width: 80rem;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
   .course--container{
     padding-top: 2rem;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1em;
   }
   .course--main{
     background-color: #fff;
     height: 28.5rem;
     width: 25rem;
     padding: 2rem;
+    margin: 0 auto;
   }
   .courses--section{
     display: flex;
@@ -29,12 +25,7 @@
     width: 22rem;
     justify-content: space-evenly;
   }
-  .course--all{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 18rem;
-  }
+
   .course--details{
     line-height: 1.5;
     margin-left: 1rem;
@@ -140,10 +131,59 @@
   }
 
   @media screen and (max-width: 1250px) {
-    .course-all{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      gap: 1.2rem;
+    .course--container{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-content: center;
+      width: 60rem;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 870px) {
+
+    .course--main{
+      width: 24rem;
+      padding: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 790px) {
+    .course--container{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    .courses--section{
+      width: 26rem;
+    }
+    .course--title{
+      width: 20rem;
+    }
+    .course--main{
+      width: 30rem;
+    }
+  }
+  @media screen and (max-width: 490px) {
+    .courses--section{
+      width: 20rem;
+    }
+    .course--title{
+      width: 14rem;
+    }
+    .course--icon{
+      width: 4rem;
+      height: 4rem;
+    }
+    .course--img{
+      width: 2.5rem;
+    }
+    .course--main{
+      width: 24rem;
+      padding: 2rem;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .course--main{
+      width: 22rem;
+      padding: 1rem;
     }
   }

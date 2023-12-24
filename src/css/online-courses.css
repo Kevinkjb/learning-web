@@ -9,6 +9,7 @@
     gap: 10px;
     place-items: center;
     width: 85rem;
+    max-width: 100%;
     margin: 0 auto;
   
   }
@@ -48,5 +49,38 @@
   }
   .courses-icon{
     width: 4.5rem;
+  }
+
+  @media screen and (max-width: 1360px) {
+    .online--courses{
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      width: 60rem;
+    }
+  }
+  @media screen and (max-width: 930px) {
+    .online--courses{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      width: 45rem;
+    }
+  }
+  @media screen and (max-width: 670px) {
+    .online--courses{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      width: 30rem;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    .online--courses{
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(12, 1fr);
+      width: 90%;
+    }
+    .sample-box{
+      width: 20rem;
+    }
+    
   }
   
