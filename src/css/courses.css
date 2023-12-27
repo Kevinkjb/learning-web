@@ -4,12 +4,21 @@
     width: 80rem;
     max-width: 100%;
     margin: 0 auto;
+    
+  }
+  .course-all{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    width: 80rem;
+    max-width: 100%;
+    margin: 0 auto;
   }
   .course--container{
     padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 1em;
   }
   .course--main{
@@ -131,7 +140,8 @@
   }
 
   @media screen and (max-width: 1250px) {
-    .course--container{
+    .course--container,
+    .course-all{
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       justify-content: center;
@@ -139,6 +149,7 @@
       max-width: 100%;
       margin: 0 auto;
     }
+
   }
   @media screen and (max-width: 870px) {
 
@@ -148,7 +159,8 @@
     }
   }
   @media screen and (max-width: 790px) {
-    .course--container{
+    .course--container,
+    .course-all{
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr;
     }
