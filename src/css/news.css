@@ -11,7 +11,8 @@
   .news--container{
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 80rem;
+    max-width: 100%;
     justify-content: space-between;
   }
   .news--title{
@@ -55,3 +56,49 @@
     align-items: center;
     width: 25rem;
   }
+
+  /* NEWSLETTER RESPONSIVE SECTION */
+
+  @media screen  and (max-width: 860px){
+    .email,
+    .form{
+      width: 20rem;
+    }
+    .news--title{
+      width: 22rem;
+    }
+  }
+  @media screen  and (max-width: 770px){
+    .news--container{
+      flex-direction: column;
+    }
+    .newsletter--page{
+      height: 18rem;
+      padding: 2rem;
+    }
+    .email,
+    .form{
+      width: 25rem;
+    }
+    .news--title{
+      width: 25rem;
+    }
+  }
+  @media screen  and (max-width: 480px){
+    .email,
+    .form,
+    .news--title{
+      width: 21rem;
+      max-width: 100%;
+    }
+  }
+  @media screen  and (max-width: 420px){
+    .email,
+    .form,
+    .news--title{
+      width: 18rem;
+      max-width: 100%;
+    }
+  }
+
+

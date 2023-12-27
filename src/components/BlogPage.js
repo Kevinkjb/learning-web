@@ -24,16 +24,16 @@ const BlogPage = ({blog}) =>{
                     <div className='blog-item'>
                         <FaComment className='blog--icon'/>
                         <Link to="/journal" className='blog--comments'>
-                            <span>3 comments</span>
+                            <span>{blog.comments}</span>
                         </Link>
                     </div>
                 </div>
                 <div className='blog--desc'>
                     <Link to="/journal" className='blog--title'>
-                        <h2>Build your Dream Software & Engineering Career</h2>
+                        <h2>{blog.title}</h2>
                     </Link>
                     <p>
-                        A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                        {blog.description}
                     </p>
                 </div>
             </div>
