@@ -9,7 +9,7 @@
     justify-items: center;
     width: 85rem;
     grid-template-rows: 1fr;
-    margin: 5rem auto;
+    margin: 5rem auto 0 auto;
     height: 52rem;
   }
 
