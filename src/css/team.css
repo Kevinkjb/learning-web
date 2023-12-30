@@ -6,7 +6,8 @@
     margin: 10rem auto 10rem;
     place-items: center;
     gap: 1rem;
-    width: 85rem;;
+    width: 85rem;
+    max-width: 100%;
 }
 .team--image{
     width: 20rem;
@@ -33,6 +34,7 @@
     transition: all .3s ease;
 }
 .team--content{
+    width: 20rem;
     background-color: var(--secondary-color);
     transition: all .3s ease;
     border-top-left-radius: 1.5rem;
@@ -51,4 +53,68 @@
 .team--content:hover .team--names,
 .team--content:focus .team--names{
     color: #fff;
+}
+
+.newsletter--page{
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1350px) {
+    .team--page{
+
+        width: 78rem;
+    }
+    .team--image,
+    .team--content{
+        width: 18rem;
+    }
+    
+}
+@media screen and (max-width: 1210px) {
+    .team--page{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 60rem;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .team--page{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 42rem;
+    }
+    .team--image,
+    .team--content{
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 670px) {
+    .team--page{
+        width: 38rem;
+    }
+    .team--image,
+    .team--content{
+        width: 18rem;
+    }
+}
+@media screen and (max-width: 670px) {
+    .team--page{
+        width: 35rem;
+    }
+    .team--image,
+    .team--content{
+        width: 16rem;
+    }
+}
+@media screen and (max-width: 570px) {
+    .team--page{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        width: 22rem;
+    }
+    .team--image,
+    .team--content{
+        width: 20rem;
+    }
 }

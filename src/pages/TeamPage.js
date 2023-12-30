@@ -11,7 +11,7 @@ const TeamPage = () =>{
     return(
         <>
             <div className='section--two'>
-                <NavBar/>1
+                <NavBar/>
                 <HeroPageTwo title={"Team"} titleTwo={"Team"}/>
             </div>
             <main className="team--page">
