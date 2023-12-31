@@ -63,7 +63,7 @@
     width: 12rem;
     margin-left: auto;
   }
-  .media--icons span{
+  .media--icons a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,11 +73,22 @@
     border-radius: 50%;
     text-align: center;
     color: #1eb2a6;
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+  .media--icons a:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
   }
   
   /* Nav Section */
   .navbar{
     padding: 1rem;
+  }
+ 
+ .active{
+  color: var(--primary-color);
+  text-decoration: none;
   }
   
   .main-nav{

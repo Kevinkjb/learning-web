@@ -1,11 +1,20 @@
-
+import { useState, useEffect } from "react";
 import { IoMdTime } from "react-icons/io";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaFacebookF, FaInstagram, FaTwitter, FaDribbble  } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import '../css/nav.css'
 const NavBar = () =>{
+    const location = useLocation();
+    const [activeItem, setActiveItem] = useState(null);
+  
+    useEffect(() => {
+      // Extract the last part of the pathname as the activeItem
+      const lastPath = location.pathname.split('/').pop();
+      setActiveItem(lastPath || 'item1'); // Default to 'item1' if no path
+    }, [location.pathname]);
+
     return(
         <div className="navbar">
             <div className="top--header">
@@ -38,10 +47,10 @@ const NavBar = () =>{
                     </div>
                     {/* Social Medias Icons */}
                     <div className="media--icons">
-                        <span><FaFacebookF/></span>
-                        <span><FaTwitter/></span>
-                        <span><FaInstagram/></span>
-                        <span><FaDribbble /></span>
+                        <a href="https://www.facebook.com" target="_blank" rel="noreferrer"><FaFacebookF/></a>
+                        <a href="https://www.twitter.com" target="_blank" rel="noreferrer"><FaTwitter/></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noreferrer"><FaInstagram/></a>
+                        <a href="https://www.dribbble.com" target="_blank" rel="noreferrer"><FaDribbble /></a>
                     </div>
 
                 </div>
@@ -53,27 +62,49 @@ const NavBar = () =>{
                         <TiThMenu className="burger--menu"/>
                         <span className="burger--text">Menu</span>
                     </div>
-                    <ul className="nav-list">
+                    <ul className="nav-list ">
                         <li>
-                            <Link className="nav-link" to="/">Home</Link>
+                        <Link 
+                            className={activeItem === 'item1' ? 'active' : 'nav-link'}
+
+                            to="/">Home
+                        </Link>
                         </li>
                         <li>
-                            <Link className="nav-link" to="/courses">All Courses</Link>
+                            <Link 
+                                className={activeItem === 'courses' ? 'active' : 'nav-link'}
+                                to="/courses">All Courses
+                            </Link>
                         </li>
                         <li>
-                            <Link className="nav-link" to="/about">About</Link>
+                            <Link 
+                                className={activeItem === 'about' ? 'active' : 'nav-link'}
+                                to="/about">About
+                            </Link>
                         </li>
                         <li>
-                            <Link className="nav-link" to="/team">Team</Link>
+                            <Link 
+                                className={activeItem === 'team' ? 'active' : 'nav-link'}
+                                to="/team">Team
+                            </Link>
                         </li>
                         <li>
-                            <Link className="nav-link" to="/pricing">Pricing</Link>
+                            <Link 
+                                className={activeItem === 'pricing' ? 'active' : 'nav-link'}
+                                to="/pricing">Pricing
+                            </Link>
                         </li>
                         <li>
-                            <Link className="nav-link" to="/journal">Journal</Link>
+                            <Link 
+                                className={activeItem === 'journal' ? 'active' : 'nav-link'}
+                                to="/journal">Journal
+                            </Link>
                         </li>
                         <li>
-                            <Link className="nav-link" to="/contact">Contact</Link>
+                        <Link 
+                                className={activeItem === 'contact' ? 'active' : 'nav-link'}
+                                to="/contact">Contact
+                            </Link>
                         </li>
                     </ul>
                 </div>

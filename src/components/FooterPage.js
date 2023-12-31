@@ -45,31 +45,31 @@ const FooterPage = () =>{
                             <div className="item--list"> 
                                 <IoIosArrowRoundForward className="arrow--forward"/>
                                 <li>
-                                    <a href="/contact" rel="noreferrer" >About Us</a>
+                                    <Link to="/about">About Us</Link>
                                 </li>
                             </div>
                             <div className="item--list"> 
                                 <IoIosArrowRoundForward className="arrow--forward"/>
                                 <li>
-                                    <a href="/contact" rel="noreferrer" >Services</a>
+                                    <Link to="/pricing">Services</Link>
                                 </li>
                             </div>
                             <div className="item--list"> 
                                 <IoIosArrowRoundForward className="arrow--forward"/>
                                 <li>
-                                    <a href="/contact" rel="noreferrer" >Courses</a>
+                                    <Link to="/courses">Courses</Link>
                                 </li>
                             </div>
                             <div className="item--list"> 
                                 <IoIosArrowRoundForward className="arrow--forward"/>
                                 <li>
-                                    <a href="/contact" rel="noreferrer" >Blog</a>
+                                    <Link to="/journal">Blog</Link>
                                 </li>
                             </div>
                             <div className="item--list"> 
                                 <IoIosArrowRoundForward className="arrow--forward"/>
                                 <li> 
-                                    <a href="/contact" rel="noreferrer" >Contact Us</a>
+                                    <Link to="/contact">Contact Us</Link>
                                 </li>
                             </div>
                         </ul>
@@ -80,25 +80,25 @@ const FooterPage = () =>{
                             <div className="item--list"> 
                                 <IoIosArrowRoundForward className="arrow--forward"/>
                                 <li>
-                                    <a href="/contact" rel="noreferrer" >Contact Us</a>
+                                    <Link to="/contact">Contact Us</Link>
                                 </li>
                             </div>
                             <div className="item--list"> 
                                 <IoIosArrowRoundForward className="arrow--forward"/>
                                 <li>
-                                    <a href="/pricing" rel="noreferrer" >Pricing</a>
+                                    <Link to="/pricing" >Pricing</Link>
                                 </li>
                             </div>
                             <div className="item--list"> 
                                 <IoIosArrowRoundForward className="arrow--forward"/>
                                 <li>
-                                    <a href="/" rel="noreferrer" >Terms & Conditions</a>
+                                    <a href="/"  rel="noreferrer" >Terms & Conditions</a>
                                 </li>
                             </div>
                             <div className="item--list"> 
                                 <IoIosArrowRoundForward className="arrow--forward"/>
                                 <li>
-                                    <a href="/" rel="noreferrer" >Privacy</a>
+                                    <a href="/"  rel="noreferrer" >Privacy</a>
                                 </li>
                             </div>
                             <div className="item--list"> 
