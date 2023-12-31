@@ -8,6 +8,15 @@ import '../css/nav.css'
 const NavBar = () =>{
     const location = useLocation();
     const [activeItem, setActiveItem] = useState(null);
+    const [navToggle, setNavToggle] = useState(false)
+
+    const burgerToggle = () =>{
+        console.log("clicked")
+        setNavToggle(!navToggle)
+    }
+    const closeMobileMenu = () => {
+        setNavToggle(false);
+      };
   
     useEffect(() => {
       // Extract the last part of the pathname as the activeItem
@@ -58,51 +67,59 @@ const NavBar = () =>{
             </div>
             <nav className="main-nav">
                 <div>
-                    <div className="burger">
+                    <div className="burger" 
+                        onClick={() => setNavToggle(burgerToggle)}
+                    >
                         <TiThMenu className="burger--menu"/>
-                        <span className="burger--text">Menu</span>
+                        <span className="burger--text" >Menu</span>
                     </div>
-                    <ul className="nav-list ">
-                        <li>
+                    <ul className={`nav-list ${navToggle ? 'active' : ''}`}>
+                        <li onClick={closeMobileMenu}>
                         <Link 
                             className={activeItem === 'item1' ? 'active' : 'nav-link'}
-
+                            
                             to="/">Home
                         </Link>
                         </li>
                         <li>
                             <Link 
                                 className={activeItem === 'courses' ? 'active' : 'nav-link'}
+                                onClick={closeMobileMenu}
                                 to="/courses">All Courses
                             </Link>
                         </li>
                         <li>
                             <Link 
                                 className={activeItem === 'about' ? 'active' : 'nav-link'}
+                                onClick={(closeMobileMenu)}
                                 to="/about">About
                             </Link>
                         </li>
                         <li>
                             <Link 
                                 className={activeItem === 'team' ? 'active' : 'nav-link'}
+                                onClick={closeMobileMenu}
                                 to="/team">Team
                             </Link>
                         </li>
                         <li>
                             <Link 
                                 className={activeItem === 'pricing' ? 'active' : 'nav-link'}
+                                onClick={closeMobileMenu}
                                 to="/pricing">Pricing
                             </Link>
                         </li>
                         <li>
                             <Link 
                                 className={activeItem === 'journal' ? 'active' : 'nav-link'}
+                                onClick={closeMobileMenu}
                                 to="/journal">Journal
                             </Link>
                         </li>
                         <li>
-                        <Link 
+                            <Link 
                                 className={activeItem === 'contact' ? 'active' : 'nav-link'}
+                                onClick={closeMobileMenu}
                                 to="/contact">Contact
                             </Link>
                         </li>

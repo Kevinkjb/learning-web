@@ -24,7 +24,8 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  .sample-box:hover{
+  .sample-box:hover,
+  .sample-box:focus{
     border: .4rem solid #1eb2a6;
   
   }

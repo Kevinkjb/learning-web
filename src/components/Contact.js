@@ -14,9 +14,7 @@ const Contact = () =>{
                     <div className='contact--info'>
                         <div className='info--section'>
                             <h5>Address:</h5>
-                            <p>198 West 21th Street, </p>
-                            <p>Suite 721 New York NY </p>
-                            <p>10016</p>
+                            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
                         </div>
                         <div className='info--section'>
                             <h5>Email:</h5>

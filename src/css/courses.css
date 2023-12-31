@@ -134,7 +134,8 @@
     transition: all .3s ease;
     cursor: pointer;
   }
-  .enroll--btn:hover{
+  .enroll--btn:hover,
+  .enroll--btn:focus{
     background-color: #1eb2a6;
     color: #fff;
   }
