@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../css/faq.css'
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { useRef, useEffect } from 'react';
 
 const Faq = () =>{
@@ -10,9 +10,9 @@ const Faq = () =>{
     const [wordThree, setwordThree] = useState(false)
 
     
-    const accordToggle = useRef()
-    const toggleTwo = useRef()
-    const toggleThree = useRef()
+    const accordToggle = useRef(null);
+    const toggleTwo = useRef(null);
+    const toggleThree = useRef(null);
 
     useEffect(() => {
         const handleClickOutside = (event) =>{
@@ -21,24 +21,25 @@ const Faq = () =>{
               }
         }
         document.addEventListener("mousedown", handleClickOutside);
-    }, []);
+    }, [accordToggle]);
+
     useEffect(() => {
-        const handleBoxTwo = (e) =>{
-            if(!toggleTwo.current.contains(e.target)){
+        const handleBoxTwo = (event) =>{
+            if(!toggleTwo.current.contains(event.target)){
                 setwordTwo(false)
             }
         }
         document.addEventListener("mousedown", handleBoxTwo);
-    }, []);
+    }, [toggleTwo]);
 
     useEffect(() => {
-        const handleBoxThree = (e) =>{
-            if(!toggleThree.current.contains(e.target)){
+        const handleBoxThree = (event) =>{
+            if(!toggleThree.current.contains(event.target)){
                 setwordThree(false)
             }
         }
         document.addEventListener("mousedown", handleBoxThree);
-    }, []);
+    }, [toggleThree]);
 
     return(
         <>
@@ -47,9 +48,12 @@ const Faq = () =>{
                     <h1>Frequesntly Ask Question</h1>
             </div>
             <main className='faq--section'>
-                <div className={word ? 'faqActive' : 'faq-box-one'} onClick={() => setWord(!word )} ref={accordToggle}>
+                <div className={word ? 'faqActive' : 'faq-box-one'} onClick={() => setWord(!word)}  ref={accordToggle}>
                     <h3>How to Enroll This Online Courses?</h3>
-                    <FaAngleDown/>
+                    {word ? 
+                         <FaAngleUp/> :  <FaAngleDown/>
+                    }
+                    
                 </div>
                 {
                     word ? (<p className='accordion'>
@@ -60,7 +64,10 @@ const Faq = () =>{
                 
                 <div className={wordTwo ? 'faqActive' : 'faq-box-two'} onClick={() => setwordTwo(!wordTwo)} ref={toggleTwo}>
                     <h3>Where It is hidden by default, until the collapse?</h3>
-                    <FaAngleDown/>
+                    {wordTwo ? 
+                         <FaAngleUp/> :  <FaAngleDown/>
+                    }
+                    
                 </div>
                 {
                     wordTwo ? (<p className='accordion'>
@@ -70,7 +77,9 @@ const Faq = () =>{
                 }
                 <div  className={wordThree ? 'faqActive' : 'faq-box-three'} onClick={() => setwordThree(!wordThree)} ref={toggleThree}>
                     <h3>How to Enroll This Online Courses?</h3> 
-                    <FaAngleDown/>
+                    {wordThree ? 
+                         <FaAngleUp/> :  <FaAngleDown/>
+                    }
                 </div>
                 {
                     wordThree ? (<p className='accordion'>
