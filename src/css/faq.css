@@ -18,6 +18,7 @@
     background-color: var(--secondary-color);
     height: 4rem;
     cursor: pointer;
+
 }
 .faq-box-one:hover h3,
 .faq-box-two:hover h3,
@@ -32,4 +33,20 @@
 .faq-box-three{
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.accordion{
+    padding: 2rem;
+    font-size: 13px;
+    color: var(--text-light);
+}
+.faqActive{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: var(--primary-color);
+    height: 4rem;
+    cursor: pointer;
 }

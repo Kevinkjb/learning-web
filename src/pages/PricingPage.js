@@ -35,7 +35,9 @@ const PricingPage = () =>{
             </section>
 
             <section className="faq--page">
-                    <Faq/>
+                    <Faq 
+                    
+                    />
                     
             </section>
 
